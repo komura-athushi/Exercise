@@ -5,17 +5,31 @@
 
 using namespace std;
 
+//Div関数。
+int Div(int x, int y)
+{
+    //ここからコードを書く。
+    //x/y(xをyで割った商)の結果を返してください。
+  
+}
+
+//Rem関数。
+int Rem(int x, int y)
+{
+
+    //ここからコードを書く。
+    //x%y(xをyで割った余り)の結果を返してください。
+   
+}
+
 int main()
 {
-    int number[2];
+    int number1 = 10;
+    int number2 = 96;
 
-    //入力された数値を受け取る。
-    cin >> number[0];
-    cin >> number[1];
+    //出力する。
+    cout << Rem(Div(number2, number1), number1) << "\n";
 
-    //ここからコードを書いていく。
-    //大きい順に出力していく。
- 
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

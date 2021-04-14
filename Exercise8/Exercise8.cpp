@@ -5,20 +5,19 @@
 
 using namespace std;
 
-//ここからコードを書く。
-//Add関数を作る。
-//int型の引数を2つとる。
-//返り値は引数2つを加算した結果。
-
-
 int main()
 {
-    int a = 20;
-    int b = 91;
+    int numbers[5];
 
-    int number = Add(a, b);
-    number = Add(number, number);
-    cout << number << "\n";
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> numbers[i];
+    }
+
+    //ここからコードを書く。
+    //numbersの最小値を出力してください。
+  
+
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

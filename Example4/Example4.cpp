@@ -1,4 +1,4 @@
-﻿// Exercise6.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Example4.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
@@ -6,24 +6,23 @@
 using namespace std;
 
 //ここからコードを書く。
-//Mul関数
+//Add関数を作る。
 //int型の引数を2つとる。
-//返り値は引数2つを乗算した結果。
-
-
-//ここからコードを書く。
-//Sub関数
-//int型の引数を2つとる。
-//返り値は1つ目の引数から2つ目の引数を減算した結果。
-
+//返り値は引数2つを加算した結果。
+int Add(int x, int y)
+{
+    return x + y;
+}
 
 
 int main()
 {
-    int x = 75;
-    int y = 123;
+    int a = 20;
+    int b = 91;
 
-    cout << Mul(Sub(x, y), y) << "\n";
+    int number = Add(a, b);
+    number = Add(number, number);
+    cout << number << "\n";
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

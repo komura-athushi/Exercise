@@ -1,29 +1,29 @@
-﻿// Exercise6.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Exercise3.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
 using namespace std;
 
-//ここからコードを書く。
-//Mul関数
-//int型の引数を2つとる。
-//返り値は引数2つを乗算した結果。
-
-
-//ここからコードを書く。
-//Sub関数
-//int型の引数を2つとる。
-//返り値は1つ目の引数から2つ目の引数を減算した結果。
-
-
-
 int main()
 {
-    int x = 75;
-    int y = 123;
+    int number[2];
 
-    cout << Mul(Sub(x, y), y) << "\n";
+    //入力された数値を受け取る。
+    cin >> number[0];
+    cin >> number[1];
+
+    //ここからコードを書いていく。
+    //大きい順に出力していく。
+    if (number[0] > number[1])
+    {
+        cout << number[0] << " "  << number[1];
+    }
+    else if (number[1] > number[0])
+    {
+        cout << number[1] << " " << number[0];
+    }
+ 
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

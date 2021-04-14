@@ -1,9 +1,10 @@
-﻿// Exercise10.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Example5.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
 using namespace std;
+
 
 int main()
 {
@@ -15,8 +16,18 @@ int main()
     }
 
     //ここからコードを書く。
-    //numbersの最小値を出力してください。
+    //numbersの中で一番大きい値を出力する。
+    int max = 0;
 
+    for (int i = 0; i < 5; i++)
+    {
+        if (max < numbers[i])
+        {
+            max = numbers[i];
+        }
+    }
+
+    cout << "最大値は" << max << "です。";
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

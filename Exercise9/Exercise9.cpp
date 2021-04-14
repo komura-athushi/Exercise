@@ -6,23 +6,21 @@
 using namespace std;
 
 
-
-
 int main()
 {
-    int numbers[5];
+    int numbers[3];
 
-    for (int i = 0; i < 5; i++)
+    //入力を受け取る。
+    for (int i = 0; i < 3; i++)
     {
         cin >> numbers[i];
     }
 
     //ここからコードを書く。
-    //numbersの中で一番大きい値を出力する。
+    //数列を小さい順に並びかえる。
    
-
+    
 }
-
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
 

@@ -5,35 +5,25 @@
 
 using namespace std;
 
-//掛け算を行う関数。
-int Mul(int x, int y)
-{
+//ここからコードを書く。
+//Div関数。
+//int型の引数2つ。
+//返り値は2つ目の引数を1つ目の引数で割った商。
 
-    //ここからコードを書く。
-    //x*yの結果をreturnで返してください。
-   
-}
 
-//減算を行う関数。
-int Sub(int x, int y)
-{
-
-    //ここからコードを書く。
-    //x-yの結果をreturnで返してください。
-  
-}
-
+//ここからコードを書く。
+//Square関数。
+//int型の引数1つ。
+//返り値は引数を2乗した結果。
 
 
 int main()
 {
-    int a = 10;
-    int b = 56;
+    int number1 = 10;
+    int number2 = 93;
 
-    int number = Mul(a, b);
-    number = Sub(number, b);
 
-    cout << number << "\n";
+    cout << Square(Div(number1, number2)) << "\n";
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

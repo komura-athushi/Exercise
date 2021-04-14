@@ -1,31 +1,46 @@
-﻿// Exercise6.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Exercise9.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
 using namespace std;
 
-//ここからコードを書く。
-//Mul関数
-//int型の引数を2つとる。
-//返り値は引数2つを乗算した結果。
-
-
-//ここからコードを書く。
-//Sub関数
-//int型の引数を2つとる。
-//返り値は1つ目の引数から2つ目の引数を減算した結果。
-
-
 
 int main()
 {
-    int x = 75;
-    int y = 123;
+    int numbers[3];
 
-    cout << Mul(Sub(x, y), y) << "\n";
+    //入力を受け取る。
+    for (int i = 0; i < 3; i++)
+    {
+        cin >> numbers[i];
+    }
+
+    //ここからコードを書く。
+    //数列を小さい順に並びかえる。
+     //for文は非常に重要なので処理の流れをしっかり理解してください。
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = i + 1; j < 3; j++)
+        {
+            //numbers[i]よりnumbers[j]の方が小さいかったら。
+            if (numbers[i] > numbers[j])
+            {
+                //numbers[i]とnumbers[j]を入れ替える。
+                int hoge = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = hoge;
+            }
+        }
+    }
+
+    //数列を順番に出力する。
+    for (int i = 0; i < 3; i++)
+    {
+        cout << numbers[i] << " ";
+    }
+    
 }
-
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
 

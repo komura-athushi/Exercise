@@ -9,12 +9,19 @@ using namespace std;
 //Mul関数
 //int型の引数を2つとる。
 //返り値は引数2つを乗算した結果。
-
+int Mul(int x, int y)
+{
+    return x * y;
+}
 
 //ここからコードを書く。
 //Sub関数
 //int型の引数を2つとる。
 //返り値は1つ目の引数から2つ目の引数を減算した結果。
+int Sub(int x, int y)
+{
+    return x - y;
+}
 
 
 

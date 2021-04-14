@@ -5,15 +5,35 @@
 
 using namespace std;
 
+//掛け算を行う関数。
+int Mul(int x, int y)
+{
+
+    //ここからコードを書く。
+    //x*yの結果をreturnで返してください。
+   
+}
+
+//減算を行う関数。
+int Sub(int x, int y)
+{
+
+    //ここからコードを書く。
+    //x-yの結果をreturnで返してください。
+  
+}
+
+
+
 int main()
 {
-    //ここからコードを書く。
+    int a = 10;
+    int b = 56;
 
-    //入力された数値が偶数か奇数か判断する。
-    //(例)2で割り切れるかどうか。
+    int number = Mul(a, b);
+    number = Sub(number, b);
 
-    //偶数か奇数かを出力する。
-  
+    cout << number << "\n";
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

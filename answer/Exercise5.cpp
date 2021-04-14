@@ -1,29 +1,35 @@
-﻿// Exercise6.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Exercise5.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
 using namespace std;
 
-//ここからコードを書く。
-//Mul関数
-//int型の引数を2つとる。
-//返り値は引数2つを乗算した結果。
+//Div関数。
+int Div(int x, int y)
+{
+    //ここからコードを書く。
+    //x/y(xをyで割った商)の結果を返してください。
+    return x / y;
+}
 
+//Rem関数。
+int Rem(int x, int y)
+{
 
-//ここからコードを書く。
-//Sub関数
-//int型の引数を2つとる。
-//返り値は1つ目の引数から2つ目の引数を減算した結果。
-
-
+    //ここからコードを書く。
+    //x%y(xをyで割った余り)の結果を返してください。
+    return x % y;
+}
 
 int main()
 {
-    int x = 75;
-    int y = 123;
+    int number1 = 10;
+    int number2 = 96;
 
-    cout << Mul(Sub(x, y), y) << "\n";
+    //出力する。
+    cout << Rem(Div(number2, number1), number1) << "\n";
+
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
