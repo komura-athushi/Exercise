@@ -1,37 +1,42 @@
-﻿// Exercise11.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Exercise10.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
 using namespace std;
 
-//Add関数、引数2つを加算して返す。
-int Add(int x, int y)
-{
-    return x + y;
-}
-
-//Mul関数、引数2つを乗算して返す。
-int Mul(int x, int y)
-{
-    return x * y;
-}
-
 int main()
 {
-    int x, y, z;
-    cin >> x;
-    cin >> y;
-    cin >> z;
+    int numbers[4];
 
+    //入力された値を受け取る。
+    for (int i = 0; i < 4; i++)
+    {
+        cin >> numbers[i];
+    }
 
-    int number = 0;
     //ここからコードを書く。
-    //x+y+(x*z)の計算結果を変数numberに代入してください。
-    //(+,-,*,/)などの四則演算子は使わないでください。
- 
+    //入力された値から2番目に大きい値を出力してください。
+     //数列を大きい順に並びかえる。
+     //for文は非常に重要なので処理の流れをしっかり理解してください。
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = i + 1; j < 4; j++)
+        {
+            //numbers[i]よりnumbers[j]の方が大きかったら。
+            if (numbers[i] < numbers[j])
+            {
+                //numbers[i]とnumbers[j]を入れ替える。
+                int hoge = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = hoge;
+            }
+        }
+    }
 
-    cout << "計算結果は" << number << "です。";
+    //2番目に大きい値を出力する。
+    cout << "2番目に大きい値は" << numbers[1] << "です。";
+
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー

@@ -1,11 +1,24 @@
-﻿// Exercise12.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+﻿// Exercise10.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int numbers[4];
+
+    //入力された値を受け取る。
+    for (int i = 0; i < 4; i++)
+    {
+        cin >> numbers[i];
+    }
+
+    //ここからコードを書く。
+    //入力された値から2番目に大きい値を出力してください。
+  
+
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
